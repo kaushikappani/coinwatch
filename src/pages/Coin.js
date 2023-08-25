@@ -159,7 +159,7 @@ const Coin = () => {
   });
   useEffect(() => {
     fetchData();
-    const socket = io(`https://abiding-nettle-sandpaper.glitch.me`,
+    const socket = io(`https://coinwatch-socket.onrender.com`,
       {
         autoConnect: true,
       }
