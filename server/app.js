@@ -4,6 +4,22 @@ const express = require("express");
 const app = express();
 const socket = require("socket.io");
 const axios = require("axios");
+var cors = require('cors')
+
+const corsOpts = {
+    origin: '*',
+
+    methods: [
+        'GET',
+        'POST',
+    ],
+
+    allowedHeaders: [
+        'Content-Type',
+    ],
+};
+
+app.use(cors(corsOpts));
 
 
 //routes
