@@ -17,7 +17,7 @@ const server = app.listen(4000, () => {
 
 const io = socket(server, {
     cors: {
-        origin: ["http://localhost:3000", "http://192.168.29.200:3000", "https://www.coinwatch.ml", "https://coinwatch.ml"],
+        origin: ["http://localhost:3000", "http://192.168.29.200:3000", "https://coinwatch-one.vercel.app"],
         methods: ["GET", "POST"]
     }
 });
