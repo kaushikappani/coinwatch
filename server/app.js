@@ -19,7 +19,7 @@ const corsOpts = {
     ],
 };
 
-app.use(cors(corsOpts));
+app.use(cors(corsOpts));    
 
 
 //routes
@@ -33,7 +33,7 @@ const server = app.listen(4000, () => {
 
 const io = socket(server, {
     cors: {
-        origin: ["http://localhost:3000", "http://192.168.29.200:3000", "https://coinwatch-one.vercel.app"],
+        origin: ["http://localhost:3000", "https://coinwatch-nine.vercel.app"],
         methods: ["GET", "POST"]
     }
 });
