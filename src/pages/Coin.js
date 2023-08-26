@@ -118,7 +118,7 @@ const Coin = () => {
       });
       setAlert({
         open: true,
-        message: "Coin Removed",
+        message: "Coin Liked",
         type: "success",
       });
     } catch (err) {
